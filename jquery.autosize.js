@@ -35,7 +35,6 @@
 				maxHeight = parseInt($ta.css('maxHeight'), 10),
 				active,
 				i = copyStyle.length,
-				resize,
 				boxOffset = 0;
 
 				if ($ta.css('box-sizing') === borderBox || $ta.css('-moz-box-sizing') === borderBox || $ta.css('-webkit-box-sizing') === borderBox){
@@ -49,13 +48,10 @@
 				} else {
 					mirror = $(copy).data('ismirror', true).addClass(className || 'autosizejs')[0];
 
-					resize = $ta.css('resize') === 'none' ? 'none' : 'horizontal';
-
 					$ta.data('mirror', $(mirror)).css({
 						overflow: hidden, 
 						overflowY: hidden, 
 						wordWrap: 'break-word',
-						resize: resize
 					});
 				}
 
