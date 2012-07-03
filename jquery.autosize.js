@@ -14,6 +14,7 @@
 		'fontWeight',
 		'fontStyle',
 		'letterSpacing',
+		'lineHeight',
 		'textTransform',
 		'wordSpacing',
 		'textIndent'
